@@ -19,7 +19,8 @@ jobs:
         uses: docker/setup-buildx-action@v3
       -
         name: check
-        run: | ls
+        run:
+          shell: ls
       _
         name: Build and push
         uses: docker/build-push-action@v5
