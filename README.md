@@ -1,1 +1,1 @@
-# docker-githu-actions
+# docker-github-actions
