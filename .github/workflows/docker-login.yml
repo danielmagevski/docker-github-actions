@@ -25,6 +25,7 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v5
         with:
-          context: .
+          registry: docker.io
+          image: danielmagevski/nginx
           push: true
           tags: danielmagevski/nginx:latest
