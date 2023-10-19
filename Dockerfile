@@ -1,1 +1,2 @@
-FROM httpd
+FROM nginx
+EXPOSE 8080
