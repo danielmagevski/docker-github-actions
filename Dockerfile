@@ -1,5 +1,5 @@
-FROM python:2.7
+FROM nginx
 WORKDIR /html
-COPY . .
+COPY /app .
 EXPOSE 80
-CMD python -m SimpleHTTPServer 80
+CMD ["nginx", "-g", "daemon off;"]
